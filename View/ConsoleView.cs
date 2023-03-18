@@ -4,9 +4,9 @@ namespace Gladiator.View
 {
     public class ConsoleView : IView
     {
-        public string Display()
+        public void Display()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Welcome in Gladiator Tournament simulator");
         }
 
         public bool GetNumberBetween(int min, int max)
