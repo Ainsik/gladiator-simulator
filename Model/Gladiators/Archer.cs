@@ -1,9 +1,11 @@
-﻿namespace Gladiator.Model.Gladiators;
+﻿using Gladiator.Utils.Enums;
+
+namespace Gladiator.Model.Gladiators;
 public class Archer : Gladiator
 {
-    protected override int HP { get; set; }
-    protected override int SP { get; set; }
-    protected override int DEX { get; set; }
+    protected override double MultiplierHP => StatisticMultiplier.Low;
+    protected override double MultiplierSp => StatisticMultiplier.Medium;
+    protected override double MultiplierDex => StatisticMultiplier.Medium;
     public override int LevelUp()
     {
         throw new System.NotImplementedException();
