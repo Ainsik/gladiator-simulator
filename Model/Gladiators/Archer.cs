@@ -1,6 +1,17 @@
-﻿namespace Gladiator.Model.Gladiators
+﻿namespace Gladiator.Model.Gladiators;
+public class Archer : Gladiator
 {
-    public class Archer
+    protected override string Type => nameof(Archer);
+    protected override int HP { get; set; }
+    protected override int SP { get; set; }
+    protected override int DEX { get; set; }
+    public override int LevelUp()
     {
+        throw new System.NotImplementedException();
+    }
+
+    public override bool IsDeath()
+    {
+        throw new System.NotImplementedException();
     }
 }
