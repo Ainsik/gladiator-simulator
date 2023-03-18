@@ -1,6 +1,6 @@
-﻿namespace Gladiator.View
+﻿namespace Gladiator.View;
+public interface IView
 {
-    public interface IView
-    {
-    }
+    string Display();
+    bool GetNumberBetween(int min, int max);
 }
