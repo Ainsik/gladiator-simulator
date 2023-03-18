@@ -1,4 +1,7 @@
-﻿using Gladiator.View;
+﻿using System;
+using Gladiator.Model.Gladiators;
+using Gladiator.Utils;
+using Gladiator.View;
 
 namespace Gladiator
 {
@@ -6,9 +9,25 @@ namespace Gladiator
     {
         public static void Main()
         {
-            var cv = new ConsoleView();
+            //var cv = new ConsoleView();
 
-            cv.GetNumberBetween(10, 20);
+            //cv.GetNumberBetween(10, 20);
+
+
+            var archer = new Archer();
+            var archer2 = new Archer();
+            var archer3 = new Archer();
+            var asa = new Assassin();
+            var asa2 = new Assassin();
+            var asa3= new Assassin();
+
+
+            Console.WriteLine($"{archer.FullName}, {archer.Level}");
+            Console.WriteLine($"{archer2.FullName}, {archer2.Level}");
+            Console.WriteLine($"{archer3.FullName}, {archer3.Level}");
+            Console.WriteLine($"{asa.FullName}, {asa.Level}");
+            Console.WriteLine($"{asa2.FullName}, {asa2.Level}");
+            Console.WriteLine($"{asa3.FullName}, {asa3.Level}");
         }
     }
 }
