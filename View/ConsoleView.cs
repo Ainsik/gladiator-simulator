@@ -12,14 +12,14 @@ namespace Gladiator.View
         public bool GetNumberBetween(int min, int max)
         {
             Console.WriteLine($"Choose number between {min} - {max}");
-            var boolValueFromParse = ParseUserInputToNumber(min, max).Item1;
+            var valuesFromParse = ParseUserInputToNumber(min, max);
 
-            while (boolValueFromParse == false)
+            while (valuesFromParse.Item1 == false)
             {
-                Console.WriteLine($"Wrong value!");
+                Console.WriteLine($"{valuesFromParse.Item2} it's wrong value!");
                 Console.WriteLine($"Choose number again between {min} - {max}");
-                boolValueFromParse = ParseUserInputToNumber(min, max).Item1;
-                if (boolValueFromParse)
+                valuesFromParse = ParseUserInputToNumber(min, max);
+                if (valuesFromParse.Item1)
                 {
                     Console.WriteLine("ok");
                     return true;
