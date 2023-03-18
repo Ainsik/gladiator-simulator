@@ -1,7 +1,6 @@
 ﻿namespace Gladiator.Model.Gladiators;
 public class Archer : Gladiator
 {
-    protected override string Type => nameof(Archer);
     protected override int HP { get; set; }
     protected override int SP { get; set; }
     protected override int DEX { get; set; }
