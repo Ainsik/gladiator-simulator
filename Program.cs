@@ -22,12 +22,13 @@ namespace Gladiator
             var asa3= new Assassin();
 
 
-            Console.WriteLine($"{archer.FullName}, {archer.Level}");
+            Console.WriteLine($"{archer.FullName}, {archer.Level}, {archer.BasicHp}, {archer.BasicSp}, {archer.BasicDex}");
             Console.WriteLine($"{archer2.FullName}, {archer2.Level}");
             Console.WriteLine($"{archer3.FullName}, {archer3.Level}");
             Console.WriteLine($"{asa.FullName}, {asa.Level}");
             Console.WriteLine($"{asa2.FullName}, {asa2.Level}");
             Console.WriteLine($"{asa3.FullName}, {asa3.Level}");
+            Console.WriteLine();
         }
     }
 }

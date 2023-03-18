@@ -1,7 +1,7 @@
 ﻿namespace Gladiator.Utils.Enums;
-public enum StatisticMultiplier
+public static class StatisticMultiplier
 {
-    Low,
-    Medium,
-    High
+    public static double Low => 0.75;
+    public static double Medium => 1.0;
+    public static double High => 1.25;
 }
