@@ -1,10 +1,14 @@
-﻿namespace Gladiator
+﻿using Gladiator.View;
+
+namespace Gladiator
 {
     public static class Program
     {
         public static void Main()
         {
-            // Start the program here
+            var cv = new ConsoleView();
+
+            cv.GetNumberBetween(10, 20);
         }
     }
 }
