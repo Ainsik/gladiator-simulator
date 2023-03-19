@@ -5,8 +5,8 @@ public class Archer : BaseGladiator
     protected override double MultiplierSp => StatisticMultiplier.Medium;
     protected override double MultiplierDex => StatisticMultiplier.Medium;
     public override int LevelUp()
-    {   
-        return Level + 10;
+    {
+        return Level++;
     }
 
     public override bool IsDeath()
