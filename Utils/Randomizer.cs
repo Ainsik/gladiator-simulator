@@ -3,7 +3,7 @@ public static class Randomizer
 {
     private const string NamesPath = @"C:\CC\modul4\gladiator-csharp-Ainsik\Names.txt";
     private static readonly string[] Names = GetNamesFromFile();
-    private static readonly Random Random = new();
+    private static readonly Random Random = new ();
     private const int LowerBoundLevel = 1;
     private const int UpperBoundLevel = 6;
     private const int LowerBoundStats = 25;
