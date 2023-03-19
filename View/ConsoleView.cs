@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Gladiator.View
+﻿namespace Gladiator.View
 {
     public class ConsoleView : IView
     {

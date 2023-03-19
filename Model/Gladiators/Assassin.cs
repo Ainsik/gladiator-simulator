@@ -1,6 +1,4 @@
-﻿using Gladiator.Utils.Enums;
-
-namespace Gladiator.Model.Gladiators;
+﻿namespace Gladiator.Model.Gladiators;
 public class Assassin : BaseGladiator
 {
     protected override double MultiplierHP => StatisticMultiplier.Low;

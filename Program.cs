@@ -1,9 +1,4 @@
-﻿using System;
-using Gladiator.Model.Gladiators;
-using Gladiator.Utils;
-using Gladiator.View;
-
-namespace Gladiator;
+﻿namespace Gladiator;
 public static class Program
 {
     public static void Main()

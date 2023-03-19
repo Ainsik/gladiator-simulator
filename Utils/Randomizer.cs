@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Gladiator.Model.Gladiators;
-
-namespace Gladiator.Utils;
+﻿namespace Gladiator.Utils;
 public static class Randomizer
 {
     private const string NamesPath = @"C:\CC\modul4\gladiator-csharp-Ainsik\Names.txt";

@@ -1,7 +1,4 @@
-﻿using Gladiator.Utils;
-using System;
-
-namespace Gladiator.Model.Gladiators;
+﻿namespace Gladiator.Model.Gladiators;
 public class GladiatorFactory
 {
     public void DisplayGladiators(int amount)
