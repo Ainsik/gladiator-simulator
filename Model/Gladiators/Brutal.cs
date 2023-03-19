@@ -1,7 +1,7 @@
 ﻿using Gladiator.Utils.Enums;
 
 namespace Gladiator.Model.Gladiators;
-public class Brutal : Gladiator
+public class Brutal : BaseGladiator
 {
     protected override double MultiplierHP => StatisticMultiplier.High;
     protected override double MultiplierSp => StatisticMultiplier.High;

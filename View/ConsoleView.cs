@@ -9,7 +9,7 @@ namespace Gladiator.View
             Console.WriteLine("Welcome in Gladiator Tournament simulator");
         }
 
-        public bool GetNumberBetween(int min, int max)
+        public (bool, int) GetNumberBetween(int min, int max)
         {
             Console.WriteLine($"Choose number between {min} - {max}");
             var valuesFromParse = ParseUserInputToNumber(min, max);
@@ -21,13 +21,10 @@ namespace Gladiator.View
                 valuesFromParse = ParseUserInputToNumber(min, max);
                 if (valuesFromParse.Item1)
                 {
-                    Console.WriteLine("ok");
-                    return true;
+                    return (true, valuesFromParse.Item2);
                 }
             }
-
-            Console.WriteLine("OK");
-            return true;
+            return (true, valuesFromParse.Item2);
         }
 
         private static (bool, int) ParseUserInputToNumber(int min, int max)

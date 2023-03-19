@@ -1,7 +1,7 @@
 ﻿using Gladiator.Utils.Enums;
 
 namespace Gladiator.Model.Gladiators;
-public class Archer : Gladiator
+public class Archer : BaseGladiator
 {
     protected override double MultiplierHP => StatisticMultiplier.Low;
     protected override double MultiplierSp => StatisticMultiplier.Medium;

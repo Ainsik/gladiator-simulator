@@ -1,7 +1,7 @@
 ﻿using Gladiator.Utils;
 
 namespace Gladiator.Model.Gladiators;
-public abstract class Gladiator
+public abstract class BaseGladiator
 {
     private static string Name => Randomizer.GetName();
     public string FullName => $"{GetType().Name} {Name}";

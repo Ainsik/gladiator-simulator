@@ -2,5 +2,5 @@
 public interface IView
 {
     void Display();
-    bool GetNumberBetween(int min, int max);
+    (bool, int) GetNumberBetween(int min, int max);
 }

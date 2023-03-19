@@ -1,25 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Gladiator.Utils;
+using System;
 
 namespace Gladiator.Model.Gladiators;
-public static class GladiatorFactory
+public class GladiatorFactory
 {
-    static Func<Gladiator>[]  listOfGladiators= new Func<Gladiator>[] {
-        () => new Archer(),
-        () => new Assassin(),
-        () => new Brutal(),
-        () => new Swordsman()
-    };
-
-    static Random random = new Random();
-    public static List<Gladiator> characters = new List<Gladiator>();
-
-    public static void generateRandomGladiator()
+    public void DisplayGladiators(int amount)
     {
-        for (int i = 0; i < 10; i++)
+        var gladiators = Randomizer.GenerateRandomGladiators(amount);
+        foreach (var gladiator in gladiators)
         {
-            Gladiator c = listOfGladiators[random.Next(listOfGladiators.Length)]();
-            characters.Add(c);
+            Console.WriteLine(gladiator.FullName);
         }
     }
 }
