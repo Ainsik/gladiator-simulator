@@ -3,10 +3,10 @@ public abstract class BaseGladiator
 {
     private readonly string _name = Randomizer.GetName();
     public string FullName => $"{GetType().Name} {_name}";
-    public int Level = Randomizer.GetRandomLevel();
-    private readonly int _basicHp = Randomizer.GetRandomStats();
-    private readonly int _basicSp = Randomizer.GetRandomStats();
-    private readonly int _basicDex = Randomizer.GetRandomStats();
+    public int Level = Randomizer.Get(1, 6);
+    private readonly int _basicHp = Randomizer.Get(25, 101);
+    private readonly int _basicSp = Randomizer.Get(25, 101);
+    private readonly int _basicDex = Randomizer.Get(25, 101);
     protected abstract double MultiplierHP { get; }
     protected abstract double MultiplierSp { get; }
     protected abstract double MultiplierDex { get; }
@@ -14,8 +14,25 @@ public abstract class BaseGladiator
     public double Sp => _basicSp * MultiplierSp * Level;
     public double Dex => _basicDex * MultiplierDex * Level;
     public double CurrentHp { get; set; }
-    public abstract int LevelUp();
-    public abstract bool IsDeath();
-    public abstract void HealUp();
-    public abstract void DecreaseHpBy();
+
+    public virtual int LevelUp()
+    {
+        return Level++;
+    }
+
+    public virtual bool IsDead()
+    {
+        return CurrentHp <= 0;
+    }
+
+    public virtual void HealUp()
+    {
+        CurrentHp = Hp;
+    }
+
+    public virtual void DecreaseHpBy(double damage)
+    {
+        CurrentHp = Hp;
+        CurrentHp -= damage;
+    }
 }
