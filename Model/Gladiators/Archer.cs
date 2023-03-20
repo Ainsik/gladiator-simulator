@@ -18,4 +18,15 @@ public class Archer : BaseGladiator
         }
         return false;
     }
+
+    public override void HealUp()
+    {
+        CurrentHp = Hp;
+    }
+
+    public override void DecreaseHpBy()
+    {
+        CurrentHp = Hp;
+        CurrentHp -= 10;
+    }
 }

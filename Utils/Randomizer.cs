@@ -11,9 +11,9 @@ public static class Randomizer
     public static List<BaseGladiator> Characters = new();
     private static readonly Func<BaseGladiator>[] ListOfGladiators = {
         () => new Archer(),
-        () => new Assassin(),
-        () => new Brutal(),
-        () => new Swordsman()
+        //() => new Assassin(),
+        //() => new Brutal(),
+        //() => new Swordsman()
     };
 
     private static string[] GetNamesFromFile()

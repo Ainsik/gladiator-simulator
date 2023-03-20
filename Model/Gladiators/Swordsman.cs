@@ -18,4 +18,14 @@ public class Swordsman : BaseGladiator
         }
         return false;
     }
+
+    public override void HealUp()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void DecreaseHpBy()
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -13,6 +13,9 @@ public abstract class BaseGladiator
     public double Hp => _basicHp * MultiplierHP * Level;
     public double Sp => _basicSp * MultiplierSp * Level;
     public double Dex => _basicDex * MultiplierDex * Level;
+    public double CurrentHp { get; set; }
     public abstract int LevelUp();
     public abstract bool IsDeath();
+    public abstract void HealUp();
+    public abstract void DecreaseHpBy();
 }
