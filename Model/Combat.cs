@@ -12,11 +12,6 @@ public class Combat
 
     public BaseGladiator Attacker { get; private set; }
     public BaseGladiator Defender { get; private set;}
-    public BaseGladiator Simulate(BaseGladiator firstGladiator, BaseGladiator secondGladiator)
-    {
-
-        return firstGladiator;
-    }
 
     public BaseGladiator Simulate()
     {
