@@ -6,7 +6,8 @@ public static class Program
         var consoleView = new ConsoleView();
         var numberBetween = consoleView.GetNumberBetween(1, 50);
 
-        var factory = new GladiatorFactory();
-        factory.DisplayGladiators(numberBetween.Item2);
+        var colosseum = new Colosseum();
+        colosseum.GenerateGladiators(numberBetween.Item2);
+        colosseum.SimulateCombat();
     }
 }
