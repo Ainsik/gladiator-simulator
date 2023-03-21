@@ -3,10 +3,10 @@ public abstract class BaseGladiator
 {
     private readonly string _name = Randomizer.GetName();
     public string FullName => $"{GetType().Name} {_name}";
-    public int Level = Randomizer.Get(1, 6);
-    private readonly int _basicHp = Randomizer.Get(25, 101);
-    private readonly int _basicSp = Randomizer.Get(25, 101);
-    private readonly int _basicDex = Randomizer.Get(25, 101);
+    public int Level = Randomizer.Get(1, 5);
+    private readonly int _basicHp = Randomizer.Get(25, 100);
+    private readonly int _basicSp = Randomizer.Get(25, 100);
+    private readonly int _basicDex = Randomizer.Get(25, 100);
     protected abstract double MultiplierHP { get; }
     protected abstract double MultiplierSp { get; }
     protected abstract double MultiplierDex { get; }

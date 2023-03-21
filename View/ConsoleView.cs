@@ -2,9 +2,19 @@
 {
     public class ConsoleView : IView
     {
+        public List<string> Log { get; set; }
+
         public void Display()
         {
             Console.WriteLine("Welcome in Gladiator Tournament simulator");
+            foreach (var line in Log)
+            {
+                Console.WriteLine(line);
+            }
+        }
+        public void DisplayWinMessage(BaseGladiator winner)
+        {
+            Console.WriteLine($"{winner.FullName} wins!!!");
         }
 
         public (bool, int) GetNumberBetween(int min, int max)
