@@ -7,3 +7,4 @@ global using Gladiator.Utils;
 global using Gladiator.Utils.Enums;
 global using Gladiator.Model.Gladiators;
 global using Gladiator.View;
+global using Gladiator.Model;
