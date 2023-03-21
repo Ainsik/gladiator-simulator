@@ -8,3 +8,4 @@ global using Gladiator.Utils.Enums;
 global using Gladiator.Model.Gladiators;
 global using Gladiator.View;
 global using Gladiator.Model;
+global using Gladiator.Controller;
